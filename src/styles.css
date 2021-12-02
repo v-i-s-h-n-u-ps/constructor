@@ -1,0 +1,45 @@
+.App {
+  font-family: sans-serif;
+  /* text-align: center; */
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.box {
+  width: 200px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.box p {
+  padding: 8px 0;
+}
+
+.image-box {
+  width: 100%;
+  object-fit: contain;
+  height: 150px;
+}
+
+.name {
+  /* word-wrap: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden; */
+  --fontSize: 18px;
+  font-size: var(--fontSize);
+  height: calc(3 * var(--fontSize));
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
